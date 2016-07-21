@@ -5,7 +5,7 @@
     <title>recapitulatif</title>
   </head>
   <body>
-<h1> PROUT
+<h1> 
 </h1>
   </body>
 </html>

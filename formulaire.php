@@ -23,7 +23,18 @@
 
     </div>
     <h1>Bienvenu dans l'agence de voyage</h1>
-
+    <form method="post" action="agence.php">
+          <label for="civilite">Civilité</label>
+          <select name="civilite" id="civilite">
+              <option value="Mr">Mr</option>
+              <option value="Mme">Mme</option>
+          </select><br>
+          Nom : <input type="text" name="nom" id="nom" /><br>
+          Prénom : <input type="text" name="prenom" id="prenom" /><br>
+          Voyage <input type="radio" name="voyage-excursion" id="voyage-excursion" value="voyage" /><br>
+          Excursion <input type="radio" name="voyage-excursion" id="voyage-excursion" value="excursion" /><br>
+          <input type="submit" value="Suite" />
+    </form>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
