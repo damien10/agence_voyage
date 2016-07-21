@@ -30,7 +30,7 @@
       // <!-- Formulaire excursions -->
         echo '<form action="<?php echo htmlentities($_SERVER[\'PHP_SELF\']); ?>" method="post">';
           echo '<label for="Excursions">Choix d\'excursion :</label>';
-            echo '<select name="excursions">';
+            echo '<select name="excursions" id="excursions">';
               echo '<option value="Angleterre">Angleterre - 250€ par personne</option>';
               echo '<option value="Mr">Espagne - 200€ par personne</option>';
             echo '</select>';
