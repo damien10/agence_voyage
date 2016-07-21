@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -23,11 +24,43 @@
 
     </div>
     <h1>Bienvenu dans l'agence de voyage</h1>
-
+    <form method="post" action="agence.php">
+          <label for="civilite">Civilité</label>
+          <select name="civilite" id="civilite">
+              <option value="Mr">Mr</option>
+              <option value="Mme">Mme</option>
+          </select><br>
+          Nom : <input type="text" name="nom" id="nom" /><br>
+          Prénom : <input type="text" name="prenom" id="prenom" /><br>
+          Voyage <input type="radio" name="voyage-excursion" id="voyage-excursion" value="voyage" /><br>
+          Excursion <input type="radio" name="voyage-excursion" id="voyage-excursion" value="excursion" /><br>
+          <input type="submit" value="Suite" />
+    </form>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
+=======
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Agence de voyage</title>
+ </head>
+ <body>
+   <form method="post" action="agence.php">
+      <label for="civilite">Civilité</label>
+      <select name="civilite" id="civilite">
+          <option value="Mr">Mr</option>
+          <option value="Mme">Mme</option>
+      </select><br>
+      Nom : <input type="text" name="nom" id="nom" /><br>
+      Prénom : <input type="text" name="prenom" id="prenom" /><br>
+      Voyage <input type="radio" name="voyage-excursion" id="voyage-excursion" value="voyage" /><br>
+      Excursion <input type="radio" name="voyage-excursion" id="voyage-excursion" value="excursion" /><br>
+      <input type="submit" value="Suite" />
+   </form>
+ </body>
+>>>>>>> d3909f66db81c9a795da0f8bdb3a0803a179f4a0
 </html>
