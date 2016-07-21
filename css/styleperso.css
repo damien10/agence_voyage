@@ -1,0 +1,19 @@
+body {
+margin:0;
+padding:0;
+background: url(../images/background_plage.jpg) no-repeat center fixed;
+-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+background-size: cover; /* version standardisée */
+}/*Pour formulaire.php et formulaire.php*/
+header {
+ margin-bottom: 20px;
+}.bg-panel-heading {
+ background: rgba(210, 134, 134, 0.4) !important;
+ border-radius: 10px ;
+ border: none;
+}#submit-button {
+ margin-top: 4px;
+ margin-left: 60px;
+}.bg-opacity {
+ background: rgba(210, 134, 134, 0.4);
+}
