@@ -27,53 +27,18 @@
 
 
 
-      //  Formulaire excursions
-
-          if(isset($_POST['formSubmit']))
-          {
-          $pays = $_POST['Excursions'];
-          $erreur = "";
-          if(empty($pays))
-          {
-          $erreur = "<li>Vous n'avez pas selectionné d'Excursion!</li>";
-          }
-          if($erreur != "")
-          {
-          echo("<p>Erreur! (╯°□°）╯︵ ┻━┻ </p>\n");
-          echo("<ul>" . $erreur . "</ul>\n");
-          }
-          else
-          {
-          switch($pays)
-          {
-          case "Angleterre": $redir = "Angleterre.html"; break;
-          case "Allemagne": $redir = "Allemagne.html"; break;
-          case "Espagne": $redir = "Espagne.html"; break;
-          case "Italie": $redir = "Italie.html"; break;
-          case "Portugal": $redir = "Portugal.html"; break;
-          default: echo("Erreur!"); exit(); break;
-          }
-          echo " redirecting to: $redir ";
-          exit();
-          }
-          }
-
-
-      echo '<form action="<?php echo htmlentities($_SERVER[\'PHP_SELF\']); ?>" method="post">';
+      // <!-- Formulaire excursions -->
+        echo '<form action="<?php echo htmlentities($_SERVER[\'PHP_SELF\']); ?>" method="post">';
           echo '<label for="Excursions">Choix d\'excursion :</label>';
-          echo '<select name="Excursions" id="Excursions">';
-            echo '<option value="">Selectionnez un pays...</option>';
-            echo '<option value="Angleterre">Angleterre</option>';
-            echo '<option value="Allemagne">Allemagne</option>';
-            echo '<option value="Espagne">Espagne</option>';
-            echo '<option value="Italie">Italie</option>';
-            echo '<option value="Portugal">Portugal</option>';
-          echo '</select>';
-        echo '<br>';
-          echo 'Nombre de personnes : <input type="text" name="nombre">';
-        echo '<br>';
-        echo '<input type="submit" name="name" value="Estimation">';
-      echo '</form>';
+            echo '<select name="excursions">';
+              echo '<option value="Angleterre">Angleterre - 250€ par personne</option>';
+              echo '<option value="Mr">Espagne - 200€ par personne</option>';
+            echo '</select>';
+              echo '<br>';
+              echo 'Nombre de personnes : <input type="text" name="nombre">';
+              echo '<br>';
+            echo '<input type="submit" name="name" value="Estimation">';
+        echo '</form>';
        ?>
     </body>
 </html>
