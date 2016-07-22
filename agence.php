@@ -1,10 +1,10 @@
 <?php
-session_start(); // démarrage de la session
-// obligatoire pour récupérer les variables de session stockées
-$_SESSION['civilite'] = $_POST['civilite'];
-$_SESSION['nom'] = $_POST['nom'];
-$_SESSION['prenom'] = $_POST['prenom'];
-$_SESSION['voyage-excursion'] = $_POST['voyage-excursion'];
+  session_start(); // démarrage de la session
+  // obligatoire pour récupérer les variables de session stockées
+  $_SESSION['civilite'] = $_POST['civilite'];
+  $_SESSION['nom'] = $_POST['nom'];
+  $_SESSION['prenom'] = $_POST['prenom'];
+  $_SESSION['voyage-excursion'] = $_POST['voyage-excursion'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,7 +40,7 @@ $_SESSION['voyage-excursion'] = $_POST['voyage-excursion'];
 
     <!-- jquery libs -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <title>Choisissez votre destination</title>
+    <title>Choisissez votre destination</title>
 
   </head>
   <body>
@@ -52,11 +52,11 @@ $_SESSION['voyage-excursion'] = $_POST['voyage-excursion'];
     <div class="containerpanel panel-default col-md-6 col-md-offset-3">
       <!-- Default panel contents -->
       <div class="panel-heading bg-panel-heading text-center">Choisissez votre destination</div>
-        <div class="panel-body">
-      <?php
-      if ($_SESSION['voyage-excursion'] == "voyage") {
-        // <!-- Formulaire de choix de voyage -->
-        echo '<form method="post" action="recapitulatif.php">';
+      <div class="panel-body">
+        <?php
+          if ($_SESSION['voyage-excursion'] == "voyage") {
+            // <!-- Formulaire de choix de voyage -->
+            echo '<form method="post" action="recapitulatif.php">';
             echo '<label for="choix-voyage">Choix voyage</label>';
             echo '<select name="choix-voyage" id="choix_voyage">';
             echo '<option value="Caraibes">Les caraibes - Le pied ! - 4500€ par personnes pour une semaine</option>';
@@ -65,31 +65,27 @@ $_SESSION['voyage-excursion'] = $_POST['voyage-excursion'];
             echo 'Nombres de personnes : <input type="number" name="nombre" placeholder="exemple : 3" required="requis" max="100">';
             echo '<br>';
             echo '<center><input type="submit" name="Estimation" value="Estimation"></center>';
-        echo '</form>';
-
-      }
-      else {
-        // <!-- Formulaire excursions -->
-          echo '<form method="post" action="recapitulatif.php">';
+            echo '</form>';
+          }
+          else {
+            // <!-- Formulaire excursions -->
+            echo '<form method="post" action="recapitulatif.php">';
             echo '<label for="Excursions">Choix d\'excursion :</label>';
-              echo '<select name="excursions" id="excursions">';
-                echo '<option value="Angleterre">Angleterre - 250€ par personne</option>';
-                echo '<option value="Espagne">Espagne - 200€ par personne</option>';
-              echo '</select>';
-                echo '<br>';
-                echo 'Nombre de personnes : <input type="number" name="nombre" placeholder="exemple : 3" required="requis" max="100">';
-                echo '<br>';
-              echo '<center><input type="submit" name="name" value="Estimation"></center>';
-          echo '</form>';
-      }
-         ?>
-       </div>
+            echo '<select name="excursions" id="excursions">';
+            echo '<option value="Angleterre">Angleterre - 250€ par personne</option>';
+            echo '<option value="Espagne">Espagne - 200€ par personne</option>';
+            echo '</select>';
+            echo '<br>';
+            echo 'Nombre de personnes : <input type="number" name="nombre" placeholder="exemple : 3" required="requis" max="100">';
+            echo '<br>';
+            echo '<center><input type="submit" name="name" value="Estimation"></center>';
+            echo '</form>';
+          }
+        ?>
+      </div>
     </div>
 
-
-
-   <!-- Bootstrap core JavaScript
-   ================================================== -->
+   <!-- Bootstrap core JavaScript ================================================== -->
    <!-- Placed at the end of the document so the pages load faster -->
    <!-- jquery libs -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -101,4 +97,4 @@ $_SESSION['voyage-excursion'] = $_POST['voyage-excursion'];
    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
    <script src="js/ie10-viewport-bug-workaround.js"></script>
  </body>
- </html>
+</html>
