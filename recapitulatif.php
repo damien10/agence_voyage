@@ -34,7 +34,8 @@
   </head>
   <body>
     <header class="well bg-opacity col-md-10 col-md-offset-1">
-      <h1 class="text-center">Bienvenue dans l'agence de voyage du cargo qui fuit</h1>
+      <h1 class="text-center">BIENVENUE</h1>
+      <h3 class="text-center">dans l'agence de voyage du cargo qui fuit</h3>
     </header>
     <div class="containerpanel panel-default col-md-6 col-md-offset-3">
       <!-- Default panel contents -->
